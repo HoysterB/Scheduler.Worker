@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "iX4QX7sdHOWDvCZnjSFM6ab3uQvJZXVVQ8Yh9lOE0C0=",
+  "Source": "Scheduler.API",
+  "BasePath": "_content/Scheduler.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
