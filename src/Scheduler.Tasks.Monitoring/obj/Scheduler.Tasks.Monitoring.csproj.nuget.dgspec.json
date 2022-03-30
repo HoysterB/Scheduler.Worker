@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\JMB\\teros\\Scheduler.Worker\\src\\Scheduler.Tasks.Monitoring\\Scheduler.Tasks.Monitoring.csproj": {}
+    "C:\\Users\\ROOT1\\Desktop\\UpdateTeros\\Scheduler.Worker\\src\\Scheduler.Tasks.Monitoring\\Scheduler.Tasks.Monitoring.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\JMB\\teros\\Scheduler.Worker\\src\\Scheduler.Tasks.Monitoring\\Scheduler.Tasks.Monitoring.csproj": {
+    "C:\\Users\\ROOT1\\Desktop\\UpdateTeros\\Scheduler.Worker\\src\\Scheduler.Tasks.Monitoring\\Scheduler.Tasks.Monitoring.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\JMB\\teros\\Scheduler.Worker\\src\\Scheduler.Tasks.Monitoring\\Scheduler.Tasks.Monitoring.csproj",
+        "projectUniqueName": "C:\\Users\\ROOT1\\Desktop\\UpdateTeros\\Scheduler.Worker\\src\\Scheduler.Tasks.Monitoring\\Scheduler.Tasks.Monitoring.csproj",
         "projectName": "Scheduler.Tasks.Monitoring",
-        "projectPath": "D:\\Projects\\JMB\\teros\\Scheduler.Worker\\src\\Scheduler.Tasks.Monitoring\\Scheduler.Tasks.Monitoring.csproj",
-        "packagesPath": "C:\\Users\\ataum\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\JMB\\teros\\Scheduler.Worker\\src\\Scheduler.Tasks.Monitoring\\obj\\",
+        "projectPath": "C:\\Users\\ROOT1\\Desktop\\UpdateTeros\\Scheduler.Worker\\src\\Scheduler.Tasks.Monitoring\\Scheduler.Tasks.Monitoring.csproj",
+        "packagesPath": "C:\\Users\\ROOT1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ROOT1\\Desktop\\UpdateTeros\\Scheduler.Worker\\src\\Scheduler.Tasks.Monitoring\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ataum\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ROOT1\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\ROOT1\\Desktop": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -60,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
