@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Scheduler.API.Service;
 
 namespace Scheduler.API.Controllers;
 
@@ -8,28 +9,79 @@ public class ProducerController : ControllerBase
 {
  
     private readonly ILogger<ProducerController> _logger;
+    private readonly IRabbitMQService _rabbitmqService;
 
-    public ProducerController(ILogger<ProducerController> logger)
+    public ProducerController(ILogger<ProducerController> logger, IRabbitMQService rabbitMQService)
     {
+        _rabbitmqService = rabbitMQService;
         _logger = logger;
     }
 
     [HttpPost("monitoring")]
     public IActionResult PostMonitoring()
     {
-        return Ok();
+
+        try
+        {
+            object exampleObject = new
+            {
+                Id = Guid.NewGuid().ToString(),
+                Name = "PostMonitoringObject",
+                Date = DateTime.Now
+            };
+
+            _rabbitmqService.SendMessage(exampleObject, "scheduler-ex", "scheduler-monitoring-rk");
+
+            return Ok();
+        }
+        catch (Exception)
+        {
+            return StatusCode(500);
+        }
     }
 
     [HttpPost("status")]
     public IActionResult PostStatus()
     {
-        return Ok();
+        try
+        {
+            object exampleObject = new
+            {
+                Id = Guid.NewGuid().ToString(),
+                Name = "PostStatusObject",
+                Date = DateTime.Now
+            };
+
+            _rabbitmqService.SendMessage(exampleObject, "scheduler-ex", "scheduler-status-rk");
+
+            return Ok();
+        }
+        catch (Exception)
+        {
+            return StatusCode(500);
+        }
     }
 
     [HttpPost("submition")]
     public IActionResult PostSubmition()
     {
-        return Ok();
+        try
+        {
+            object exampleObject = new
+            {
+                Id = Guid.NewGuid().ToString(),
+                Name = "PostSubmitionObject",
+                Date = DateTime.Now
+            };
+
+            _rabbitmqService.SendMessage(exampleObject, "scheduler-ex", "scheduler-submition-rk");
+
+            return Ok();
+        }
+        catch (Exception)
+        {
+            return StatusCode(500);
+        }
     }
 
 }
