@@ -2,13 +2,12 @@ using Scheduler.API.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddSingleton<IRabbitMQService, RabbitMQService>(sp => {
-
+builder.Services.AddSingleton<IRabbitMQService, RabbitMQService>(sp =>
+{
     var rabbitMQ = new RabbitMQService(sp.GetService<ILogger<RabbitMQService>>());
     if (rabbitMQ.CreateConnection())
     {
@@ -20,7 +19,6 @@ builder.Services.AddSingleton<IRabbitMQService, RabbitMQService>(sp => {
     }
     return rabbitMQ;
 });
-
 
 var app = builder.Build();
 

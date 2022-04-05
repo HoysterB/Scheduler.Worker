@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VpTyqVQahHHF3s8lb1BU7dfcUCtgyFQ51XljoBu67L209qyhO4O8gSZp3DEXtsFN0HFngJQM8POM+G1tReFM0Q==",
+  "dgSpecHash": "LTw0Zgb5/2WkFk/xI9ODnYjOn7casLTArUjyTM+Dzp80iv9sNM9qx4aC3Z9XKTI8KtZFSb7rAPbjQF+nCjJceg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ROOT1\\Desktop\\UpdateTeros\\Scheduler.Worker\\src\\Scheduler.Tasks.Status\\Scheduler.Tasks.Status.csproj",
+  "projectFilePath": "C:\\Users\\ROOT1\\Desktop\\WorkerRabbitMq\\Scheduler.Worker\\src\\Scheduler.Tasks.Status\\Scheduler.Worker.Status.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ROOT1\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.0\\microsoft.extensions.configuration.6.0.0.nupkg.sha512",
     "C:\\Users\\ROOT1\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",

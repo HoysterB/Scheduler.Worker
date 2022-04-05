@@ -17,7 +17,6 @@ public class Worker : BackgroundService
     {
         _rabbitMQService.ConsumerMessage<object>("scheduler-monitoring-qu", (message) =>
         {
-            Console.WriteLine($"Worker received message: {message}");
         });
 
         while (!stoppingToken.IsCancellationRequested)

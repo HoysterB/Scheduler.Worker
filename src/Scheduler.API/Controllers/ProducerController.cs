@@ -7,7 +7,6 @@ namespace Scheduler.API.Controllers;
 [Route("[controller]")]
 public class ProducerController : ControllerBase
 {
- 
     private readonly ILogger<ProducerController> _logger;
     private readonly IRabbitMQService _rabbitmqService;
 
@@ -20,7 +19,6 @@ public class ProducerController : ControllerBase
     [HttpPost("monitoring")]
     public IActionResult PostMonitoring()
     {
-
         try
         {
             object exampleObject = new
@@ -62,19 +60,17 @@ public class ProducerController : ControllerBase
         }
     }
 
+    /// <summary>
+    /// Endpoint responsável por acionar um Agent com configuração específica.
+    /// </summary>
+    /// <param name="taskConfig"></param>
+    /// <returns></returns>
     [HttpPost("submition")]
-    public IActionResult PostSubmition()
+    public IActionResult PostSubmition(TaskConfig taskConfig)
     {
         try
         {
-            object exampleObject = new
-            {
-                Id = Guid.NewGuid().ToString(),
-                Name = "PostSubmitionObject",
-                Date = DateTime.Now
-            };
-
-            _rabbitmqService.SendMessage(exampleObject, "scheduler-ex", "scheduler-submition-rk");
+            _rabbitmqService.SendMessage(taskConfig, "scheduler-ex", "scheduler-submition-rk");
 
             return Ok();
         }
@@ -83,5 +79,4 @@ public class ProducerController : ControllerBase
             return StatusCode(500);
         }
     }
-
 }

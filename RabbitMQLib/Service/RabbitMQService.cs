@@ -32,7 +32,6 @@ public class RabbitMQService : IRabbitMQService
             _channel = _conn.CreateModel();
             _logger.LogInformation($"[RabbitMQService] RabbitMQ connected at: {DateTime.UtcNow.ToLongTimeString()}");
             return true;
-
         }
         catch (Exception e)
         {
@@ -106,7 +105,6 @@ public class RabbitMQService : IRabbitMQService
     {
         try
         {
-
             IModel channel = _conn.CreateModel();
             var consumer = new EventingBasicConsumer(channel);
 

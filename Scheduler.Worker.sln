@@ -7,13 +7,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{77E1EF3E-9AB
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scheduler.API", "src\Scheduler.API\Scheduler.API.csproj", "{9F362287-1527-4A30-97F4-63C63B78D571}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scheduler.Tasks.Monitoring", "src\Scheduler.Tasks.Monitoring\Scheduler.Tasks.Monitoring.csproj", "{C654B790-4378-457C-B6A3-C02C2827C81C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scheduler.Worker.Monitoring", "src\Scheduler.Tasks.Monitoring\Scheduler.Worker.Monitoring.csproj", "{C654B790-4378-457C-B6A3-C02C2827C81C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scheduler.Tasks.Status", "src\Scheduler.Tasks.Status\Scheduler.Tasks.Status.csproj", "{9A8D51E1-609E-4165-A92B-76E46BF32230}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scheduler.Worker.Status", "src\Scheduler.Tasks.Status\Scheduler.Worker.Status.csproj", "{9A8D51E1-609E-4165-A92B-76E46BF32230}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scheduler.Tasks.Submition", "src\Scheduler.Tasks.Submition\Scheduler.Tasks.Submition.csproj", "{2FD541F1-330C-46B3-9F37-658740B23DE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scheduler.Worker.Submition", "src\Scheduler.Tasks.Submition\Scheduler.Worker.Submition.csproj", "{2FD541F1-330C-46B3-9F37-658740B23DE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQLib", "RabbitMQLib\RabbitMQLib.csproj", "{CC263B57-9D12-4181-AACD-BA5245FA33E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQLib", "RabbitMQLib\RabbitMQLib.csproj", "{CC263B57-9D12-4181-AACD-BA5245FA33E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scheduler.Tasks", "Scheduler.Tasks.Config\Scheduler.Tasks.csproj", "{929BE6BE-7947-48D5-9935-6BBD8D05F836}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{CC263B57-9D12-4181-AACD-BA5245FA33E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC263B57-9D12-4181-AACD-BA5245FA33E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC263B57-9D12-4181-AACD-BA5245FA33E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{929BE6BE-7947-48D5-9935-6BBD8D05F836}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{929BE6BE-7947-48D5-9935-6BBD8D05F836}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{929BE6BE-7947-48D5-9935-6BBD8D05F836}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{929BE6BE-7947-48D5-9935-6BBD8D05F836}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,6 +57,7 @@ Global
 		{9A8D51E1-609E-4165-A92B-76E46BF32230} = {77E1EF3E-9AB2-444D-9F47-0A21B4BB7DCB}
 		{2FD541F1-330C-46B3-9F37-658740B23DE3} = {77E1EF3E-9AB2-444D-9F47-0A21B4BB7DCB}
 		{CC263B57-9D12-4181-AACD-BA5245FA33E0} = {77E1EF3E-9AB2-444D-9F47-0A21B4BB7DCB}
+		{929BE6BE-7947-48D5-9935-6BBD8D05F836} = {77E1EF3E-9AB2-444D-9F47-0A21B4BB7DCB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5979CF65-9566-425D-8CCF-1D55A3645F21}

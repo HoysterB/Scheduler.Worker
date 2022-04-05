@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "YhDQ3CHkWexQ2RM/cSxBtPJGQXseAThYr6M439OsgfnFDm18Y+7Jhiq/pT/mfVUSn146Up/TD3PWn8aU6hyAPA==",
+  "dgSpecHash": "/69bbqwFRwGoILhRZbHZobAEf6y92yRdKtuhO7c8RPCKRU7b5tYGhkFUAj+ZYfTHGIPV6qFnxsIBTYikGNTYsQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ROOT1\\Desktop\\UpdateTeros\\Scheduler.Worker\\src\\Scheduler.API\\Scheduler.API.csproj",
+  "projectFilePath": "C:\\Users\\ROOT1\\Desktop\\WorkerRabbitMq\\Scheduler.Worker\\src\\Scheduler.API\\Scheduler.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ROOT1\\.nuget\\packages\\awssdk.core\\3.7.8.9\\awssdk.core.3.7.8.9.nupkg.sha512",
+    "C:\\Users\\ROOT1\\.nuget\\packages\\awssdk.dynamodbv2\\3.7.3.10\\awssdk.dynamodbv2.3.7.3.10.nupkg.sha512",
     "C:\\Users\\ROOT1\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\ROOT1\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.1\\microsoft.extensions.logging.abstractions.6.0.1.nupkg.sha512",
     "C:\\Users\\ROOT1\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

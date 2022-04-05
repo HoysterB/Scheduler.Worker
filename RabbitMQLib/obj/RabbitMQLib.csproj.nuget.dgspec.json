@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ROOT1\\Desktop\\UpdateTeros\\Scheduler.Worker\\RabbitMQLib\\RabbitMQLib.csproj": {}
+    "C:\\Users\\ROOT1\\Desktop\\WorkerRabbitMq\\Scheduler.Worker\\RabbitMQLib\\RabbitMQLib.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ROOT1\\Desktop\\UpdateTeros\\Scheduler.Worker\\RabbitMQLib\\RabbitMQLib.csproj": {
+    "C:\\Users\\ROOT1\\Desktop\\WorkerRabbitMq\\Scheduler.Worker\\RabbitMQLib\\RabbitMQLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ROOT1\\Desktop\\UpdateTeros\\Scheduler.Worker\\RabbitMQLib\\RabbitMQLib.csproj",
+        "projectUniqueName": "C:\\Users\\ROOT1\\Desktop\\WorkerRabbitMq\\Scheduler.Worker\\RabbitMQLib\\RabbitMQLib.csproj",
         "projectName": "RabbitMQLib",
-        "projectPath": "C:\\Users\\ROOT1\\Desktop\\UpdateTeros\\Scheduler.Worker\\RabbitMQLib\\RabbitMQLib.csproj",
+        "projectPath": "C:\\Users\\ROOT1\\Desktop\\WorkerRabbitMq\\Scheduler.Worker\\RabbitMQLib\\RabbitMQLib.csproj",
         "packagesPath": "C:\\Users\\ROOT1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ROOT1\\Desktop\\UpdateTeros\\Scheduler.Worker\\RabbitMQLib\\obj\\",
+        "outputPath": "C:\\Users\\ROOT1\\Desktop\\WorkerRabbitMq\\Scheduler.Worker\\RabbitMQLib\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ROOT1\\AppData\\Roaming\\NuGet\\NuGet.Config",

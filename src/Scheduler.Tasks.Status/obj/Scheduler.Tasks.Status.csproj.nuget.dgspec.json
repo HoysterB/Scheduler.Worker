@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ROOT1\\Desktop\\UpdateTeros\\Scheduler.Worker\\src\\Scheduler.Tasks.Status\\Scheduler.Tasks.Status.csproj": {}
+    "C:\\Users\\ROOT1\\Desktop\\WorkerRabbitMq\\Scheduler.Worker\\src\\Scheduler.Tasks.Status\\Scheduler.Tasks.Status.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ROOT1\\Desktop\\UpdateTeros\\Scheduler.Worker\\src\\Scheduler.Tasks.Status\\Scheduler.Tasks.Status.csproj": {
+    "C:\\Users\\ROOT1\\Desktop\\WorkerRabbitMq\\Scheduler.Worker\\src\\Scheduler.Tasks.Status\\Scheduler.Tasks.Status.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ROOT1\\Desktop\\UpdateTeros\\Scheduler.Worker\\src\\Scheduler.Tasks.Status\\Scheduler.Tasks.Status.csproj",
+        "projectUniqueName": "C:\\Users\\ROOT1\\Desktop\\WorkerRabbitMq\\Scheduler.Worker\\src\\Scheduler.Tasks.Status\\Scheduler.Tasks.Status.csproj",
         "projectName": "Scheduler.Tasks.Status",
-        "projectPath": "C:\\Users\\ROOT1\\Desktop\\UpdateTeros\\Scheduler.Worker\\src\\Scheduler.Tasks.Status\\Scheduler.Tasks.Status.csproj",
+        "projectPath": "C:\\Users\\ROOT1\\Desktop\\WorkerRabbitMq\\Scheduler.Worker\\src\\Scheduler.Tasks.Status\\Scheduler.Tasks.Status.csproj",
         "packagesPath": "C:\\Users\\ROOT1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ROOT1\\Desktop\\UpdateTeros\\Scheduler.Worker\\src\\Scheduler.Tasks.Status\\obj\\",
+        "outputPath": "C:\\Users\\ROOT1\\Desktop\\WorkerRabbitMq\\Scheduler.Worker\\src\\Scheduler.Tasks.Status\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ROOT1\\AppData\\Roaming\\NuGet\\NuGet.Config",
