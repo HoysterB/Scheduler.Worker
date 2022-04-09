@@ -112,9 +112,7 @@ C:\Users\ROOT1\Desktop\Teros.Worker\Scheduler.Worker\src\Scheduler.API\bin\Debug
 C:\Users\ROOT1\Desktop\Teros.Worker\Scheduler.Worker\src\Scheduler.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\ROOT1\Desktop\Teros.Worker\Scheduler.Worker\src\Scheduler.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\ROOT1\Desktop\Teros.Worker\Scheduler.Worker\src\Scheduler.API\bin\Debug\net6.0\RabbitMQLib.dll
-C:\Users\ROOT1\Desktop\Teros.Worker\Scheduler.Worker\src\Scheduler.API\bin\Debug\net6.0\Scheduler.Tasks.dll
 C:\Users\ROOT1\Desktop\Teros.Worker\Scheduler.Worker\src\Scheduler.API\bin\Debug\net6.0\RabbitMQLib.pdb
-C:\Users\ROOT1\Desktop\Teros.Worker\Scheduler.Worker\src\Scheduler.API\bin\Debug\net6.0\Scheduler.Tasks.pdb
 C:\Users\ROOT1\Desktop\Teros.Worker\Scheduler.Worker\src\Scheduler.API\obj\Debug\net6.0\Scheduler.API.csproj.AssemblyReference.cache
 C:\Users\ROOT1\Desktop\Teros.Worker\Scheduler.Worker\src\Scheduler.API\obj\Debug\net6.0\Scheduler.API.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\ROOT1\Desktop\Teros.Worker\Scheduler.Worker\src\Scheduler.API\obj\Debug\net6.0\Scheduler.API.AssemblyInfoInputs.cache
@@ -130,3 +128,5 @@ C:\Users\ROOT1\Desktop\Teros.Worker\Scheduler.Worker\src\Scheduler.API\obj\Debug
 C:\Users\ROOT1\Desktop\Teros.Worker\Scheduler.Worker\src\Scheduler.API\obj\Debug\net6.0\ref\Scheduler.API.dll
 C:\Users\ROOT1\Desktop\Teros.Worker\Scheduler.Worker\src\Scheduler.API\obj\Debug\net6.0\Scheduler.API.pdb
 C:\Users\ROOT1\Desktop\Teros.Worker\Scheduler.Worker\src\Scheduler.API\obj\Debug\net6.0\Scheduler.API.genruntimeconfig.cache
+C:\Users\ROOT1\Desktop\Teros.Worker\Scheduler.Worker\src\Scheduler.API\bin\Debug\net6.0\Scheduler.Core.dll
+C:\Users\ROOT1\Desktop\Teros.Worker\Scheduler.Worker\src\Scheduler.API\bin\Debug\net6.0\Scheduler.Core.pdb

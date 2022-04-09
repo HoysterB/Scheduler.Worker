@@ -1,0 +1,12 @@
+C:\Users\ROOT1\Desktop\Teros.Worker\Scheduler.Worker\Scheduler.Tasks.Config\bin\Debug\net6.0\Scheduler.Core.deps.json
+C:\Users\ROOT1\Desktop\Teros.Worker\Scheduler.Worker\Scheduler.Tasks.Config\bin\Debug\net6.0\Scheduler.Core.dll
+C:\Users\ROOT1\Desktop\Teros.Worker\Scheduler.Worker\Scheduler.Tasks.Config\bin\Debug\net6.0\ref\Scheduler.Core.dll
+C:\Users\ROOT1\Desktop\Teros.Worker\Scheduler.Worker\Scheduler.Tasks.Config\bin\Debug\net6.0\Scheduler.Core.pdb
+C:\Users\ROOT1\Desktop\Teros.Worker\Scheduler.Worker\Scheduler.Tasks.Config\obj\Debug\net6.0\Scheduler.Core.csproj.AssemblyReference.cache
+C:\Users\ROOT1\Desktop\Teros.Worker\Scheduler.Worker\Scheduler.Tasks.Config\obj\Debug\net6.0\Scheduler.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ROOT1\Desktop\Teros.Worker\Scheduler.Worker\Scheduler.Tasks.Config\obj\Debug\net6.0\Scheduler.Core.AssemblyInfoInputs.cache
+C:\Users\ROOT1\Desktop\Teros.Worker\Scheduler.Worker\Scheduler.Tasks.Config\obj\Debug\net6.0\Scheduler.Core.AssemblyInfo.cs
+C:\Users\ROOT1\Desktop\Teros.Worker\Scheduler.Worker\Scheduler.Tasks.Config\obj\Debug\net6.0\Scheduler.Core.csproj.CoreCompileInputs.cache
+C:\Users\ROOT1\Desktop\Teros.Worker\Scheduler.Worker\Scheduler.Tasks.Config\obj\Debug\net6.0\Scheduler.Core.dll
+C:\Users\ROOT1\Desktop\Teros.Worker\Scheduler.Worker\Scheduler.Tasks.Config\obj\Debug\net6.0\ref\Scheduler.Core.dll
+C:\Users\ROOT1\Desktop\Teros.Worker\Scheduler.Worker\Scheduler.Tasks.Config\obj\Debug\net6.0\Scheduler.Core.pdb
