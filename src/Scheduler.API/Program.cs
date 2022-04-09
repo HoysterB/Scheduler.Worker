@@ -13,9 +13,15 @@ builder.Services.AddSingleton<IRabbitMQService, RabbitMQService>(sp =>
     {
         string exchangeName = "scheduler-ex";
         rabbitMQ.ExchangeCreate(exchangeName, "topic");
+
         rabbitMQ.QueueCreate("scheduler-status-qu", exchangeName, "scheduler-status-rk");
+        rabbitMQ.QueueBind("scheduler-status-qu", exchangeName, "scheduler-status-rk");
+
         rabbitMQ.QueueCreate("scheduler-monitoring-qu", exchangeName, "scheduler-monitoring-rk");
+        rabbitMQ.QueueBind("scheduler-monitoring-qu", exchangeName, "scheduler-monitoring-rk");
+
         rabbitMQ.QueueCreate("scheduler-submition-qu", exchangeName, "scheduler-submition-rk");
+        rabbitMQ.QueueBind("scheduler-submition-qu", exchangeName, "scheduler-submition-rk");
     }
     return rabbitMQ;
 });

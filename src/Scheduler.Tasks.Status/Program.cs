@@ -1,4 +1,4 @@
-using Scheduler.Tasks.Status;
+using Scheduler.Worker.Status;
 
 IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureServices(services =>

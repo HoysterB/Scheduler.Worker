@@ -2,7 +2,7 @@
 using Amazon.DynamoDBv2.DocumentModel;
 using Amazon.Runtime;
 
-namespace Scheduler
+namespace Scheduler.Core
 {
     internal class DynamoDB
     {

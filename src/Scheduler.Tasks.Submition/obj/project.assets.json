@@ -561,17 +561,17 @@
           "bin/placeholder/RabbitMQLib.dll": {}
         }
       },
-      "Scheduler.Tasks/1.0.0": {
+      "Scheduler.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "AWSSDK.DynamoDBv2": "3.7.3.10"
         },
         "compile": {
-          "bin/placeholder/Scheduler.Tasks.dll": {}
+          "bin/placeholder/Scheduler.Core.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Scheduler.Tasks.dll": {}
+          "bin/placeholder/Scheduler.Core.dll": {}
         }
       }
     }
@@ -1452,17 +1452,17 @@
       "path": "../../RabbitMQLib/RabbitMQLib.csproj",
       "msbuildProject": "../../RabbitMQLib/RabbitMQLib.csproj"
     },
-    "Scheduler.Tasks/1.0.0": {
+    "Scheduler.Core/1.0.0": {
       "type": "project",
-      "path": "../../Scheduler.Tasks.Config/Scheduler.Tasks.csproj",
-      "msbuildProject": "../../Scheduler.Tasks.Config/Scheduler.Tasks.csproj"
+      "path": "../../Scheduler.Tasks.Config/Scheduler.Core.csproj",
+      "msbuildProject": "../../Scheduler.Tasks.Config/Scheduler.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.Extensions.Hosting >= 6.0.1",
       "RabbitMQLib >= 1.0.0",
-      "Scheduler.Tasks >= 1.0.0"
+      "Scheduler.Core >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1471,11 +1471,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ROOT1\\Desktop\\WorkerRabbitMq\\Scheduler.Worker\\src\\Scheduler.Tasks.Submition\\Scheduler.Worker.Submition.csproj",
+      "projectUniqueName": "C:\\Users\\ROOT1\\Desktop\\Teros.Worker\\Scheduler.Worker\\src\\Scheduler.Tasks.Submition\\Scheduler.Worker.Submition.csproj",
       "projectName": "Scheduler.Worker.Submition",
-      "projectPath": "C:\\Users\\ROOT1\\Desktop\\WorkerRabbitMq\\Scheduler.Worker\\src\\Scheduler.Tasks.Submition\\Scheduler.Worker.Submition.csproj",
+      "projectPath": "C:\\Users\\ROOT1\\Desktop\\Teros.Worker\\Scheduler.Worker\\src\\Scheduler.Tasks.Submition\\Scheduler.Worker.Submition.csproj",
       "packagesPath": "C:\\Users\\ROOT1\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ROOT1\\Desktop\\WorkerRabbitMq\\Scheduler.Worker\\src\\Scheduler.Tasks.Submition\\obj\\",
+      "outputPath": "C:\\Users\\ROOT1\\Desktop\\Teros.Worker\\Scheduler.Worker\\src\\Scheduler.Tasks.Submition\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ROOT1\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1493,11 +1493,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\ROOT1\\Desktop\\WorkerRabbitMq\\Scheduler.Worker\\RabbitMQLib\\RabbitMQLib.csproj": {
-              "projectPath": "C:\\Users\\ROOT1\\Desktop\\WorkerRabbitMq\\Scheduler.Worker\\RabbitMQLib\\RabbitMQLib.csproj"
+            "C:\\Users\\ROOT1\\Desktop\\Teros.Worker\\Scheduler.Worker\\RabbitMQLib\\RabbitMQLib.csproj": {
+              "projectPath": "C:\\Users\\ROOT1\\Desktop\\Teros.Worker\\Scheduler.Worker\\RabbitMQLib\\RabbitMQLib.csproj"
             },
-            "C:\\Users\\ROOT1\\Desktop\\WorkerRabbitMq\\Scheduler.Worker\\Scheduler.Tasks.Config\\Scheduler.Tasks.csproj": {
-              "projectPath": "C:\\Users\\ROOT1\\Desktop\\WorkerRabbitMq\\Scheduler.Worker\\Scheduler.Tasks.Config\\Scheduler.Tasks.csproj"
+            "C:\\Users\\ROOT1\\Desktop\\Teros.Worker\\Scheduler.Worker\\Scheduler.Tasks.Config\\Scheduler.Core.csproj": {
+              "projectPath": "C:\\Users\\ROOT1\\Desktop\\Teros.Worker\\Scheduler.Worker\\Scheduler.Tasks.Config\\Scheduler.Core.csproj"
             }
           }
         }

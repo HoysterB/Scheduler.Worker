@@ -1,5 +1,5 @@
 using Scheduler.API.Service;
-using Scheduler.Tasks.Submition;
+using Scheduler.Worker.Submition;
 
 IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureServices(services =>

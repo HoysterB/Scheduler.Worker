@@ -90,11 +90,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ROOT1\\Desktop\\WorkerRabbitMq\\Scheduler.Worker\\Scheduler.Tasks.Config\\Scheduler.Tasks.csproj",
-      "projectName": "Scheduler.Tasks",
-      "projectPath": "C:\\Users\\ROOT1\\Desktop\\WorkerRabbitMq\\Scheduler.Worker\\Scheduler.Tasks.Config\\Scheduler.Tasks.csproj",
+      "projectUniqueName": "C:\\Users\\ROOT1\\Desktop\\Teros.Worker\\Scheduler.Worker\\Scheduler.Tasks.Config\\Scheduler.Core.csproj",
+      "projectName": "Scheduler.Core",
+      "projectPath": "C:\\Users\\ROOT1\\Desktop\\Teros.Worker\\Scheduler.Worker\\Scheduler.Tasks.Config\\Scheduler.Core.csproj",
       "packagesPath": "C:\\Users\\ROOT1\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ROOT1\\Desktop\\WorkerRabbitMq\\Scheduler.Worker\\Scheduler.Tasks.Config\\obj\\",
+      "outputPath": "C:\\Users\\ROOT1\\Desktop\\Teros.Worker\\Scheduler.Worker\\Scheduler.Tasks.Config\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ROOT1\\AppData\\Roaming\\NuGet\\NuGet.Config",

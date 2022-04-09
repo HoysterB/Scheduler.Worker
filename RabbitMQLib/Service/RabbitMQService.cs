@@ -6,16 +6,27 @@ using System.Text;
 
 namespace Scheduler.API.Service;
 
-public class RabbitMQService : IRabbitMQService
+public class RabbitMQService :  IRabbitMQService
 {
+    #region Properties
+
     private readonly ILogger _logger;
     private IConnection _conn;
     private IModel _channel;
 
+    #endregion Properties
+
+    #region Constructors
+
     public RabbitMQService(ILogger<RabbitMQService> logger)
     {
         _logger = logger;
+        _logger.LogInformation($"[RabbitMQService] RabbitMQ connected at: {DateTime.UtcNow.ToLongTimeString()}");
     }
+
+    #endregion Constructors
+
+    #region Methods
 
     public bool CreateConnection()
     {
@@ -28,9 +39,28 @@ public class RabbitMQService : IRabbitMQService
                 UserName = "guest",
                 Password = "guest"
             };
+
             _conn = factory.CreateConnection();
+
+            return true;
+        }
+        catch (Exception e)
+        {
+            _logger.LogError(e, $"[RabbitMQService] Exception in CreateConnection");
+            return false;
+        }
+    }
+
+    public bool CreateModel()
+    {
+        try
+        {
+            CheckConnection();
+
             _channel = _conn.CreateModel();
+
             _logger.LogInformation($"[RabbitMQService] RabbitMQ connected at: {DateTime.UtcNow.ToLongTimeString()}");
+
             return true;
         }
         catch (Exception e)
@@ -44,6 +74,8 @@ public class RabbitMQService : IRabbitMQService
     {
         try
         {
+            CheckConnection();
+
             var objectJson = System.Text.Json.JsonSerializer.Serialize(request);
             var body = Encoding.UTF8.GetBytes(objectJson);
 
@@ -58,7 +90,7 @@ public class RabbitMQService : IRabbitMQService
         }
         catch (Exception e)
         {
-            _logger.LogError(e, $"[RabbitMQService] Exception in Constructor");
+            _logger.LogError(e, $"[RabbitMQService] Exception in SendMessage");
 
             return false;
         }
@@ -68,18 +100,40 @@ public class RabbitMQService : IRabbitMQService
     {
         try
         {
-            _channel.QueueDeclare(queue: queueName,
+            CheckConnection();
+
+            string queueTag = _channel.QueueDeclare(queue: queueName,
                                  durable: true,
                                  exclusive: false,
                                  autoDelete: false,
                                  arguments: null);
+
+            _logger.LogInformation($"[RabbitMQService] The queue {queueName} was created successfully!");
+            return true;
+        }
+        catch (Exception e)
+        {
+            _logger.LogError(e, $"[RabbitMQService] Exception in QueueCreate");
+
+            return false;
+        }
+    }
+
+    public bool QueueBind(string queueName, string exchange, string routingKey)
+    {
+        try
+        {            
+            CheckConnection();
+
             _channel.QueueBind(queue: queueName, exchange: exchange, routingKey: routingKey);
+
+            _logger.LogInformation($"[RabbitMQService] The bind from Queue: {queueName} to Routing Key: {routingKey} was created successfully!");
 
             return true;
         }
         catch (Exception e)
         {
-            _logger.LogError(e, $"[RabbitMQService] Exception in Constructor");
+            _logger.LogError(e, $"[RabbitMQService] Exception in QueueBind");
 
             return false;
         }
@@ -89,13 +143,17 @@ public class RabbitMQService : IRabbitMQService
     {
         try
         {
+            CheckConnection();
+
             _channel.ExchangeDeclare(exchangeName, type);
+
+            _logger.LogInformation($"[RabbitMQService] The Exchange: {exchangeName} was created successfully!");
 
             return true;
         }
         catch (Exception e)
         {
-            _logger.LogInformation(e, "[RabbitMQService] Exception in CreateExchange");
+            _logger.LogInformation(e, "[RabbitMQService] Exception in ExchangeCreate");
 
             return false;
         }
@@ -142,4 +200,21 @@ public class RabbitMQService : IRabbitMQService
             return false;
         }
     }
+
+    private void CheckConnection()
+    {
+        try
+        {
+            if (_conn.IsOpen == false)
+            {
+                throw new Exception("RabbitMQ connection is not open");
+            }
+        }
+        catch (Exception e)
+        {
+            throw new Exception("RabbitMQ connection problem");
+        }
+    }
+
+    #endregion Methods
 }

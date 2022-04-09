@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scheduler.Worker.Submition"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQLib", "RabbitMQLib\RabbitMQLib.csproj", "{CC263B57-9D12-4181-AACD-BA5245FA33E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scheduler.Tasks", "Scheduler.Tasks.Config\Scheduler.Tasks.csproj", "{929BE6BE-7947-48D5-9935-6BBD8D05F836}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scheduler.Core", "Scheduler.Tasks.Config\Scheduler.Core.csproj", "{929BE6BE-7947-48D5-9935-6BBD8D05F836}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

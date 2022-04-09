@@ -1,4 +1,4 @@
-namespace Scheduler.Tasks.Status;
+namespace Scheduler.Worker.Status;
 
 public class Worker : BackgroundService
 {

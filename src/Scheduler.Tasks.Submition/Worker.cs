@@ -1,8 +1,8 @@
 using Scheduler.API.Service;
-
-namespace Scheduler.Tasks.Submition;
-
+using Scheduler.Core;
 using System.Threading.Tasks;
+
+namespace Scheduler.Worker.Submition;
 
 public class Worker : BackgroundService
 {
@@ -17,11 +17,13 @@ public class Worker : BackgroundService
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
-        _rabbitMQService.ConsumerMessage<TaskConfig>("scheduler-submition-qu", (message) =>
+        _rabbitMQService.ConsumerMessage<TaskConfig>("scheduler-submition-qu", (taskConfig) =>
         {
-            Docker docker = new Docker();
-            docker.Init(Guid.NewGuid(), message);
-            docker.Evaluate();
+            // Definir o que acontecerá após receber mensagem da fila!
+
+            var agent = StrategyMapping.ComponentAgentMapping[taskConfig.Component];
+            agent.Init(Guid.NewGuid(), taskConfig);
+            agent.Evaluate();
         });
 
         while (!stoppingToken.IsCancellationRequested)

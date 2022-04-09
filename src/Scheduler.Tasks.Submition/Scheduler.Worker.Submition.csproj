@@ -13,6 +13,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\RabbitMQLib\RabbitMQLib.csproj" />
-    <ProjectReference Include="..\..\Scheduler.Tasks.Config\Scheduler.Tasks.csproj" />
+    <ProjectReference Include="..\..\Scheduler.Tasks.Config\Scheduler.Core.csproj" />
   </ItemGroup>
 </Project>

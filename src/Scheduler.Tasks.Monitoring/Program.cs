@@ -1,5 +1,5 @@
 using Scheduler.API.Service;
-using Scheduler.Tasks.Monitoring;
+using Scheduler.Worker.Monitoring;
 
 IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureServices(services =>

@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Scheduler.API.Service;
+using Scheduler.Core;
 
 namespace Scheduler.API.Controllers;
 
@@ -21,14 +22,6 @@ public class ProducerController : ControllerBase
     {
         try
         {
-            object exampleObject = new
-            {
-                Id = Guid.NewGuid().ToString(),
-                Name = "PostMonitoringObject",
-                Date = DateTime.Now
-            };
-
-            _rabbitmqService.SendMessage(exampleObject, "scheduler-ex", "scheduler-monitoring-rk");
 
             return Ok();
         }
@@ -43,14 +36,6 @@ public class ProducerController : ControllerBase
     {
         try
         {
-            object exampleObject = new
-            {
-                Id = Guid.NewGuid().ToString(),
-                Name = "PostStatusObject",
-                Date = DateTime.Now
-            };
-
-            _rabbitmqService.SendMessage(exampleObject, "scheduler-ex", "scheduler-status-rk");
 
             return Ok();
         }
@@ -70,9 +55,16 @@ public class ProducerController : ControllerBase
     {
         try
         {
-            _rabbitmqService.SendMessage(taskConfig, "scheduler-ex", "scheduler-submition-rk");
+            bool response = _rabbitmqService.SendMessage(taskConfig, "scheduler-ex", "scheduler-submition-rk");
 
-            return Ok();
+            if (response)
+            {
+                return Ok();
+            }
+            else
+            {
+                return StatusCode(500, "RabbitMQ Problem");
+            }
         }
         catch (Exception)
         {

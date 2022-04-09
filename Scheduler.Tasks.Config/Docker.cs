@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Text;
 
-namespace Scheduler
+namespace Scheduler.Core
 {
     public class Docker : IAgent
     {

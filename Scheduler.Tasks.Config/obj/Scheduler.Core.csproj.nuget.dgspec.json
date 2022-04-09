@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ROOT1\\Desktop\\Teros.Worker\\Scheduler.Worker\\src\\Scheduler.Tasks.Status\\Scheduler.Worker.Status.csproj": {}
+    "C:\\Users\\ROOT1\\Desktop\\Teros.Worker\\Scheduler.Worker\\Scheduler.Tasks.Config\\Scheduler.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ROOT1\\Desktop\\Teros.Worker\\Scheduler.Worker\\src\\Scheduler.Tasks.Status\\Scheduler.Worker.Status.csproj": {
+    "C:\\Users\\ROOT1\\Desktop\\Teros.Worker\\Scheduler.Worker\\Scheduler.Tasks.Config\\Scheduler.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ROOT1\\Desktop\\Teros.Worker\\Scheduler.Worker\\src\\Scheduler.Tasks.Status\\Scheduler.Worker.Status.csproj",
-        "projectName": "Scheduler.Worker.Status",
-        "projectPath": "C:\\Users\\ROOT1\\Desktop\\Teros.Worker\\Scheduler.Worker\\src\\Scheduler.Tasks.Status\\Scheduler.Worker.Status.csproj",
+        "projectUniqueName": "C:\\Users\\ROOT1\\Desktop\\Teros.Worker\\Scheduler.Worker\\Scheduler.Tasks.Config\\Scheduler.Core.csproj",
+        "projectName": "Scheduler.Core",
+        "projectPath": "C:\\Users\\ROOT1\\Desktop\\Teros.Worker\\Scheduler.Worker\\Scheduler.Tasks.Config\\Scheduler.Core.csproj",
         "packagesPath": "C:\\Users\\ROOT1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ROOT1\\Desktop\\Teros.Worker\\Scheduler.Worker\\src\\Scheduler.Tasks.Status\\obj\\",
+        "outputPath": "C:\\Users\\ROOT1\\Desktop\\Teros.Worker\\Scheduler.Worker\\Scheduler.Tasks.Config\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ROOT1\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -41,9 +41,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.Extensions.Hosting": {
+            "AWSSDK.DynamoDBv2": {
               "target": "Package",
-              "version": "[6.0.1, )"
+              "version": "[3.7.3.10, )"
             }
           },
           "imports": [

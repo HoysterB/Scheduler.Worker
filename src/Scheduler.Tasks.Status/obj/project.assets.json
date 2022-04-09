@@ -1228,11 +1228,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ROOT1\\Desktop\\WorkerRabbitMq\\Scheduler.Worker\\src\\Scheduler.Tasks.Status\\Scheduler.Worker.Status.csproj",
+      "projectUniqueName": "C:\\Users\\ROOT1\\Desktop\\Teros.Worker\\Scheduler.Worker\\src\\Scheduler.Tasks.Status\\Scheduler.Worker.Status.csproj",
       "projectName": "Scheduler.Worker.Status",
-      "projectPath": "C:\\Users\\ROOT1\\Desktop\\WorkerRabbitMq\\Scheduler.Worker\\src\\Scheduler.Tasks.Status\\Scheduler.Worker.Status.csproj",
+      "projectPath": "C:\\Users\\ROOT1\\Desktop\\Teros.Worker\\Scheduler.Worker\\src\\Scheduler.Tasks.Status\\Scheduler.Worker.Status.csproj",
       "packagesPath": "C:\\Users\\ROOT1\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ROOT1\\Desktop\\WorkerRabbitMq\\Scheduler.Worker\\src\\Scheduler.Tasks.Status\\obj\\",
+      "outputPath": "C:\\Users\\ROOT1\\Desktop\\Teros.Worker\\Scheduler.Worker\\src\\Scheduler.Tasks.Status\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ROOT1\\AppData\\Roaming\\NuGet\\NuGet.Config",

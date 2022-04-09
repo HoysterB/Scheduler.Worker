@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lEOG39szOPhdTUKhoh7dP56Y/ZOIgLAepzfaf/4Xy0maLRO7nQsnlYSqMsGShtaV653UCDt80xIFF1sBWlLIpA==",
+  "dgSpecHash": "HEFFwkrQT2G4tDgdEOtTo3n5RB4DXqNQPeqlmJzpLfyxGZx3sOgzuk+zmyvqrLXA82DETckuk6d3cBpWNNTu2w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ROOT1\\Desktop\\WorkerRabbitMq\\Scheduler.Worker\\Scheduler.Tasks.Config\\Scheduler.Tasks.csproj",
+  "projectFilePath": "C:\\Users\\ROOT1\\Desktop\\Teros.Worker\\Scheduler.Worker\\Scheduler.Tasks.Config\\Scheduler.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ROOT1\\.nuget\\packages\\awssdk.core\\3.7.8.9\\awssdk.core.3.7.8.9.nupkg.sha512",
     "C:\\Users\\ROOT1\\.nuget\\packages\\awssdk.dynamodbv2\\3.7.3.10\\awssdk.dynamodbv2.3.7.3.10.nupkg.sha512"

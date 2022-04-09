@@ -10,3 +10,15 @@ C:\Users\ROOT1\Desktop\WorkerRabbitMq\Scheduler.Worker\Scheduler.Tasks.Config\ob
 C:\Users\ROOT1\Desktop\WorkerRabbitMq\Scheduler.Worker\Scheduler.Tasks.Config\obj\Debug\net6.0\Scheduler.Tasks.dll
 C:\Users\ROOT1\Desktop\WorkerRabbitMq\Scheduler.Worker\Scheduler.Tasks.Config\obj\Debug\net6.0\ref\Scheduler.Tasks.dll
 C:\Users\ROOT1\Desktop\WorkerRabbitMq\Scheduler.Worker\Scheduler.Tasks.Config\obj\Debug\net6.0\Scheduler.Tasks.pdb
+C:\Users\ROOT1\Desktop\Teros.Worker\Scheduler.Worker\Scheduler.Tasks.Config\bin\Debug\net6.0\Scheduler.Tasks.deps.json
+C:\Users\ROOT1\Desktop\Teros.Worker\Scheduler.Worker\Scheduler.Tasks.Config\bin\Debug\net6.0\Scheduler.Tasks.dll
+C:\Users\ROOT1\Desktop\Teros.Worker\Scheduler.Worker\Scheduler.Tasks.Config\bin\Debug\net6.0\ref\Scheduler.Tasks.dll
+C:\Users\ROOT1\Desktop\Teros.Worker\Scheduler.Worker\Scheduler.Tasks.Config\bin\Debug\net6.0\Scheduler.Tasks.pdb
+C:\Users\ROOT1\Desktop\Teros.Worker\Scheduler.Worker\Scheduler.Tasks.Config\obj\Debug\net6.0\Scheduler.Tasks.csproj.AssemblyReference.cache
+C:\Users\ROOT1\Desktop\Teros.Worker\Scheduler.Worker\Scheduler.Tasks.Config\obj\Debug\net6.0\Scheduler.Tasks.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ROOT1\Desktop\Teros.Worker\Scheduler.Worker\Scheduler.Tasks.Config\obj\Debug\net6.0\Scheduler.Tasks.AssemblyInfoInputs.cache
+C:\Users\ROOT1\Desktop\Teros.Worker\Scheduler.Worker\Scheduler.Tasks.Config\obj\Debug\net6.0\Scheduler.Tasks.AssemblyInfo.cs
+C:\Users\ROOT1\Desktop\Teros.Worker\Scheduler.Worker\Scheduler.Tasks.Config\obj\Debug\net6.0\Scheduler.Tasks.csproj.CoreCompileInputs.cache
+C:\Users\ROOT1\Desktop\Teros.Worker\Scheduler.Worker\Scheduler.Tasks.Config\obj\Debug\net6.0\Scheduler.Tasks.dll
+C:\Users\ROOT1\Desktop\Teros.Worker\Scheduler.Worker\Scheduler.Tasks.Config\obj\Debug\net6.0\ref\Scheduler.Tasks.dll
+C:\Users\ROOT1\Desktop\Teros.Worker\Scheduler.Worker\Scheduler.Tasks.Config\obj\Debug\net6.0\Scheduler.Tasks.pdb

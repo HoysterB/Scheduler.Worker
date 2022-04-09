@@ -1,6 +1,6 @@
 ﻿using Amazon.DynamoDBv2.DocumentModel;
 
-namespace Scheduler
+namespace Scheduler.Core
 {
     public class TaskConfig
     {

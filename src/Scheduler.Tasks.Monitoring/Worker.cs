@@ -1,6 +1,6 @@
 using Scheduler.API.Service;
 
-namespace Scheduler.Tasks.Monitoring;
+namespace Scheduler.Worker.Monitoring;
 
 public class Worker : BackgroundService
 {
