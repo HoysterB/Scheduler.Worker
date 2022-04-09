@@ -10,7 +10,7 @@
         "dependencies": {
           "Microsoft.Extensions.Hosting": "6.0.1",
           "RabbitMQLib": "1.0.0",
-          "Scheduler.Tasks": "1.0.0"
+          "Scheduler.Core": "1.0.0"
         },
         "runtime": {
           "Scheduler.Worker.Submition.dll": {}
@@ -444,12 +444,12 @@
           "RabbitMQLib.dll": {}
         }
       },
-      "Scheduler.Tasks/1.0.0": {
+      "Scheduler.Core/1.0.0": {
         "dependencies": {
           "AWSSDK.DynamoDBv2": "3.7.3.10"
         },
         "runtime": {
-          "Scheduler.Tasks.dll": {}
+          "Scheduler.Core.dll": {}
         }
       }
     }
@@ -717,7 +717,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Scheduler.Tasks/1.0.0": {
+    "Scheduler.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

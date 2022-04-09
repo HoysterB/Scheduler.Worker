@@ -17,13 +17,20 @@ public class Worker : BackgroundService
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
-        _rabbitMQService.ConsumerMessage<TaskConfig>("scheduler-submition-qu", (taskConfig) =>
+        _rabbitMQService.ConsumeMessage<TaskConfig>("scheduler-submition-qu", (taskConfig) =>
         {
             // Definir o que acontecerá após receber mensagem da fila!
-
-            var agent = StrategyMapping.ComponentAgentMapping[taskConfig.Component];
-            agent.Init(Guid.NewGuid(), taskConfig);
-            agent.Evaluate();
+            try
+            {
+                var agent = StrategyMapping.ComponentAgentMapping[taskConfig.Component];
+                agent.Init(Guid.NewGuid(), taskConfig);
+                agent.Evaluate();
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e, "Exception in ConsumeMessage");
+                throw;
+            }
         });
 
         while (!stoppingToken.IsCancellationRequested)

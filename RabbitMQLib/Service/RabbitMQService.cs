@@ -96,7 +96,7 @@ public class RabbitMQService :  IRabbitMQService
         }
     }
 
-    public bool QueueCreate(string queueName, string exchange, string routingKey)
+    public bool CreateQueue(string queueName, string exchange, string routingKey)
     {
         try
         {
@@ -119,7 +119,7 @@ public class RabbitMQService :  IRabbitMQService
         }
     }
 
-    public bool QueueBind(string queueName, string exchange, string routingKey)
+    public bool CreateBindQueue(string queueName, string exchange, string routingKey)
     {
         try
         {            
@@ -139,7 +139,7 @@ public class RabbitMQService :  IRabbitMQService
         }
     }
 
-    public bool ExchangeCreate(string exchangeName, string type)
+    public bool CreateExchange(string exchangeName, string type)
     {
         try
         {
@@ -159,7 +159,7 @@ public class RabbitMQService :  IRabbitMQService
         }
     }
 
-    public bool ConsumerMessage<T>(string queueName, Action<T> procedure)
+    public bool ConsumeMessage<T>(string queueName, Action<T> procedure)
     {
         try
         {

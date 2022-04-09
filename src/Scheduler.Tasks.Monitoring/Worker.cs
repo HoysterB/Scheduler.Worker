@@ -15,7 +15,7 @@ public class Worker : BackgroundService
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
-        _rabbitMQService.ConsumerMessage<object>("scheduler-monitoring-qu", (message) =>
+        _rabbitMQService.ConsumeMessage<object>("scheduler-monitoring-qu", (message) =>
         {
         });
 
